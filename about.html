@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 50rem;
+  min-height: 100%;
+  font-family: "Open Sans";
+}
+h1{
+   position: relative;
+   text-align: center;
+   font-family:'Abril Fatface' ;
+   font-size: 60px;
+   text-decoration: none;
+   margin: 0;
+   padding: 20px;
+}
 
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 6px 0;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #041c84;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right top, #242444 0%, purple 100%);
+
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 940px;
+  width: 94%;
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+      .restaurant-info {
+      padding:20px 80px;
+      flex-direction:row;
+        justify-content:space-around;
+}
+      .locations {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+         border-bottom:solid 2px white;
+        h4 {
+          flex:1 0 100%;
+        }
+      }
+      .hours {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        h4 {
+          flex:1 0 100%;
+        }
+
+</style>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<div class="demo">
+			<header>
+				<h1> 11:11 | Sky Bar </h1>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="menus.html">Menus</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer">
+				<div class="restaurant-info">
+					<div class="locations">
+						<h4 id = "line">LOCATIONS</h4>
+						<div class="location-1">
+							<h5>132 Sesame Street
+								<br />New York City, NY &#8212; 11231
+							</h5>
+						</div>
+						<!--location-1-->
+						<div class="location-2">
+							<h5>Evergreen Terrace
+								<br /> Springfield, OR &#8212; 10003
+							</h5>
+						</div>
+					</div>
+					<!--locations end-->
+					<div class="hours">
+						<h4> HOURS </h4>
+						<div class="weekdays">
+							<h5>Monday - Friday
+								<br/>
+          6:30pm - 11:11pm
+        
+							</h5>
+						</div>
+						<!--weekdays end-->
+						<div class="weekends">
+							<h5>Saturday & Sunday
+								<br />
+         11:11am - 11:11pm
+        
+							</h5>
+						</div>
+						<!--weekends end-->
+						<!--hours end-->
+					</div>
+					<!--restaurant-info end-->
+				</div>
+			</html>
