@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-		<style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 h1{
 
@@ -72,7 +71,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 5rem;
+  padding-bottom: 16rem;
   min-height: 100%;
   font-family: "Open Sans";
 }
@@ -111,7 +110,7 @@ body {
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  top: 59%;
+  top: 47%;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 6em;
@@ -304,7 +303,7 @@ body {
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  top: 73%;
+  top: 58%;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 6em;
@@ -486,7 +485,7 @@ body {
 .demo {
   margin: 0 auto;
   padding-top: 64px;
-  max-width: 940px;
+  max-width: 640px;
   width: 94%;
 }
 
@@ -508,43 +507,100 @@ body {
   text-align: center;
   color: white;
 }
-		</style>
+
+      .restaurant-info {
+      padding:20px 80px;
+      flex-direction:row;
+        justify-content:space-around;
+}
+      .locations {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+         border-bottom:solid 2px white;
+        h4 {
+          flex:1 0 100%;
+        }
+      }
+      .hours {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        h4 {
+          flex:1 0 100%;
+        }
+</style>
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-<div class="demo">
-<header>
-<h1> 11:11 | Sky Bar </h1>
-</header>
-
-<nav>
-  <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
-    <li>
-      <a href="#">About</a>
-    </li>
-    <li>
-      <a href="#">Menus</a>
-    </li>
-    <li>
-      <a href="#">Gallery</a>
-    </li>
-  </ul>
-</nav>
-
-  <body>
-    <div class="sign1">
-            <span class="fast-flicker">V</span>I<span class="flicker">P</span>
-      </div>
-    <div class="sign2">
-      <span class="fast-flicker">I</span>nivi<span class="flicker">t</span>atio<span class="flicker">n</span>
-    </div>
-
-    <div class="multi-bg-example"></div>
-  </body>
-</div>
-
-<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
-</html>
-
+	<div class="demo">
+		<header>
+			<h1> 11:11 | Sky Bar </h1>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Menus</a>
+				</li>
+				<li>
+					<a href="#">Gallery</a>
+				</li>
+			</ul>
+		</nav>
+		<body>
+			<div class="sign1">
+				<span class="fast-flicker">V</span>I
+				<span class="flicker">P</span>
+			</div>
+			<div class="sign2">
+				<span class="fast-flicker">I</span>nivi
+				<span class="flicker">t</span>atio
+				<span class="flicker">n</span>
+			</div>
+			<div class="multi-bg-example"></div>
+		</body>
+	</div>
+	<div class="footer">
+		<div class="restaurant-info">
+			<div class="locations">
+				<h4 id = "line">LOCATIONS</h4>
+				<div class="location-1">
+					<h5>132 Sesame Street
+						<br />New York City, NY &#8212; 11231
+					</h5>
+				</div>
+				<!--location-1-->
+				<div class="location-2">
+					<h5>Evergreen Terrace
+						<br /> Springfield, OR &#8212; 10003
+					</h5>
+				</div>
+			</div>
+			<!--locations end-->
+			<div class="hours">
+				<h4> HOURS </h4>
+				<div class="weekdays">
+					<h5>Monday - Friday
+						<br/>
+          6:30pm - 11:11pm
+        
+					</h5>
+				</div>
+				<!--weekdays end-->
+				<div class="weekends">
+					<h5>Saturday & Sunday
+						<br />
+         11:11am - 11:11pm
+        
+					</h5>
+				</div>
+				<!--weekends end-->
+				<!--hours end-->
+			</div>
+			<!--restaurant-info end-->
+		</div>
+		</html>
