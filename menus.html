@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<style>
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+<style>
+	        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+          border:solid 2px #041c84;
+}
+
+#myBtn:hover {
+  background-color: blue;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
   position: relative;
   margin: 0;
@@ -18,7 +38,11 @@ h1{
    margin: 0;
    padding: 20px;
 }
-
+h2 {
+  color: white;
+   font-family:'Abril Fatface' ;
+  border-bottom: solid 2px black;
+}
 nav {
   max-width: 960px;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
@@ -41,7 +65,7 @@ nav ul li a {
   padding: 18px;
   font-family: "Open Sans";
   text-transform:uppercase;
-  color: black;
+  color: white;
   font-size: 18px;
   text-decoration: none;
   display: block;
@@ -104,66 +128,89 @@ html {
         h4 {
           flex:1 0 100%;
         }
+        
 
 </style>
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-		<div class="demo">
-			<header>
-				<h1> 11:11 | Sky Bar </h1>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<a href="home.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="menus.html">Menus</a>
-					</li>
-					<li>
-						<a href="gallery.html">Gallery</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="footer">
-				<div class="restaurant-info">
-					<div class="locations">
-						<h4 id = "line">LOCATIONS</h4>
-						<div class="location-1">
-							<h5>132 Sesame Street
-								<br />New York City, NY &#8212; 11231
-							</h5>
-						</div>
-						<!--location-1-->
-						<div class="location-2">
-							<h5>Evergreen Terrace
-								<br /> Springfield, OR &#8212; 10003
-							</h5>
-						</div>
-					</div>
-					<!--locations end-->
-					<div class="hours">
-						<h4> HOURS </h4>
-						<div class="weekdays">
-							<h5>Monday - Friday
-								<br/>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<div class="demo">
+<header>
+<h1> 11:11 | Sky Bar </h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="home.html">Home</a>
+    </li>
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li>
+      <a href="menus.html">Menus</a>
+    </li>
+    <li>
+      <a href="gallery.html">Gallery</a>
+    </li>
+  </ul>
+</nav>
+  
+    <h2>Menus</h2>
+  <p> ccjchjcjhch <p>
+  <div class="footer">
+
+     <div class="restaurant-info">
+  
+    <div class="locations">
+      <h4>LOCATIONS</h4>
+      <div class="location-1">
+        <h5>132 Sesame Street<br />New York City, NY &#8212; 11231</h5>
+      </div><!--location-1-->
+      <div class="location-2">
+        <h5>Evergreen Terrace<br /> Springfield, OR &#8212; 10003</h5>
+      </div>
+    </div><!--locations end-->
+
+    <div class="hours">
+      <h4> HOURS </h4>
+      <div class="weekdays">
+        <h5>Monday - Friday<br/>
           6:30pm - 11:11pm
-        
-							</h5>
-						</div>
-						<!--weekdays end-->
-						<div class="weekends">
-							<h5>Saturday & Sunday
-								<br />
+        </h5>
+      </div><!--weekdays end-->
+      
+      <div class="weekends">
+        <h5>Saturday & Sunday<br />
          11:11am - 11:11pm
-        
-							</h5>
-						</div>
-						<!--weekends end-->
-						<!--hours end-->
-					</div>
-					<!--restaurant-info end-->
-				</div>
-			</html>
+        </h5>
+      </div><!--weekends end-->
+      <!--hours end-->
+    
+  </div><!--restaurant-info end-->
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div>
+    </div>
+  <script>
+  	//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+</html>
