@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<style>
-	        #myBtn {
+	<style>
+       #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -25,7 +25,7 @@
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 50rem;
+  padding-bottom: 15rem;
   min-height: 100%;
   font-family: "Open Sans";
 }
@@ -42,6 +42,11 @@ h2 {
   color: white;
    font-family:'Abril Fatface' ;
   border-bottom: solid 2px black;
+  font-size: 30px;
+}
+p{
+  color:white;
+  font-size: 30px;
 }
 nav {
   max-width: 960px;
@@ -111,6 +116,7 @@ html {
       padding:20px 80px;
       flex-direction:row;
         justify-content:space-around;
+        font-size: 18px;
 }
       .locations {
         display:flex;
@@ -131,69 +137,75 @@ html {
         
 
 </style>
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-<div class="demo">
-<header>
-<h1> 11:11 | Sky Bar </h1>
-</header>
-
-<nav>
-  <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
-    <li>
-      <a href="about.html">About</a>
-    </li>
-    <li>
-      <a href="menus.html">Menus</a>
-    </li>
-    <li>
-      <a href="gallery.html">Gallery</a>
-    </li>
-  </ul>
-</nav>
-  
-    <h2>About</h2>
-  <p> ccjchjcjhch <p>
-  <div class="footer">
-
-     <div class="restaurant-info">
-  
-    <div class="locations">
-      <h4>LOCATIONS</h4>
-      <div class="location-1">
-        <h5>132 Sesame Street<br />New York City, NY &#8212; 11231</h5>
-      </div><!--location-1-->
-      <div class="location-2">
-        <h5>Evergreen Terrace<br /> Springfield, OR &#8212; 10003</h5>
-      </div>
-    </div><!--locations end-->
-
-    <div class="hours">
-      <h4> HOURS </h4>
-      <div class="weekdays">
-        <h5>Monday - Friday<br/>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<div class="demo">
+			<header>
+				<h1> 11:11 | Sky Bar </h1>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="menus.html">Menus</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</nav>
+			<h2>About</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus nunc eget enim porta, lacinia fermentum erat aliquam. Proin ullamcorper nisi at porttitor egestas. Morbi eu semper nunc. Donec faucibus maximus tristique. Cras lobortis, dolor sed lacinia lobortis, turpis orci tempus arcu, porttitor posuere purus quam a lacus. Quisque ornare non felis eu malesuada. Phasellus gravida tellus eu turpis molestie, et aliquet quam gravida. Aenean arcu dui, vestibulum quis lacus at, vehicula blandit nisi. Sed iaculis euismod mauris, eget faucibus libero pharetra at. Proin vitae elit leo. Sed non metus vehicula, elementum lacus accumsan, vehicula nunc. </p>
+			<p>
+Etiam laoreet nec dolor non molestie. In egestas malesuada nisi, in convallis odio sagittis molestie. Sed leo justo, tincidunt a mauris in, dapibus tempor felis. Curabitur egestas faucibus mauris ut molestie. Donec sit amet sapien blandit, aliquet lorem in, facilisis nibh. Aliquam erat volutpat. Donec convallis sagittis quam, vitae malesuada sapien. Pellentesque efficitur est at neque gravida, ut rhoncus risus efficitur. Fusce a erat aliquet, malesuada lacus a, interdum turpis. Aenean metus tellus, consequat sit amet ultrices id, ultricies eu nisi. Praesent consectetur urna augue, eget ultrices felis condimentum sed. 
+				<p>
+					<div class="footer">
+						<div class="restaurant-info">
+							<div class="locations">
+								<h4>LOCATIONS</h4>
+								<div class="location-1">
+									<h5>132 Sesame Street
+										<br />New York City, NY &#8212; 11231
+									</h5>
+								</div>
+								<!--location-1-->
+								<div class="location-2">
+									<h5>Evergreen Terrace
+										<br /> Springfield, OR &#8212; 10003
+									</h5>
+								</div>
+							</div>
+							<!--locations end-->
+							<div class="hours">
+								<h4> HOURS </h4>
+								<div class="weekdays">
+									<h5>Monday - Friday
+										<br/>
           6:30pm - 11:11pm
-        </h5>
-      </div><!--weekdays end-->
-      
-      <div class="weekends">
-        <h5>Saturday & Sunday<br />
+        
+									</h5>
+								</div>
+								<!--weekdays end-->
+								<div class="weekends">
+									<h5>Saturday & Sunday
+										<br />
          11:11am - 11:11pm
-        </h5>
-      </div><!--weekends end-->
-      <!--hours end-->
-    
-  </div><!--restaurant-info end-->
-    </div>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <div>
-    </div>
-  <script>
-  	//Get the button
+        
+									</h5>
+								</div>
+								<!--weekends end-->
+								<!--hours end-->
+							</div>
+							<!--restaurant-info end-->
+						</div>
+						<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+						<div></div>
+						<script>
+ //Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -212,5 +224,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-  </script>
-</html>
+    </script>
+					</html>
+				</html>
