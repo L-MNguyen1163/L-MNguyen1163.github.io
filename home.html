@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+		<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+h1{
+
+   position: relative;
+
+   text-align: center;
+
+   font-family:'Abril Fatface' ;
+
+   font-size: 60px;
+
+   text-decoration: none;
+
+   margin: 0;
+
+   padding: 20px;
+
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 6px 0;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #041c84;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right top, #242444 0%, purple 100%);
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 5rem;
+  min-height: 100%;
+  font-family: "Open Sans";
+}
+
+
+.multi-bg-example {
+  padding:150px;
+  background-image: 
+ url(https://www.changirewards.com/shillagames/img/shilla-lights-gif.gif),
+      url(https://image.freepik.com/free-photo/rough-brick-wall-texture-brick-background-dark-black_37129-690.jpg);
+  background-repeat: no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right;
+      background-size: cover;
+}
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+	.sign1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 0%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #696969,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 59%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  }
+  28%,
+  33% {
+    color: #8A2BE2;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #8A2BE2;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+	.sign2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 0%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #696969,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 73%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  }
+  28%,
+  33% {
+    color: #8A2BE2;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #8A2BE2;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+  color: white;
+  text-shadow: 0 0 0.6rem 	#0000FF, 0 0 1.5rem #8A2BE2,
+    -0.2rem 0.1rem 1rem #9400D3, 0.2rem 0.1rem 1rem #0000CD,
+    0 -0.5rem 2rem 	#0000FF, 0 0.5rem 3rem #4169E1;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+		</style>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<div class="demo">
+<header>
+<h1> 11:11 | Sky Bar </h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Menus</a>
+    </li>
+    <li>
+      <a href="#">Gallery</a>
+    </li>
+  </ul>
+</nav>
+
+  <body>
+    <div class="sign1">
+            <span class="fast-flicker">V</span>I<span class="flicker">P</span>
+      </div>
+    <div class="sign2">
+      <span class="fast-flicker">I</span>nivi<span class="flicker">t</span>atio<span class="flicker">n</span>
+    </div>
+
+    <div class="multi-bg-example"></div>
+  </body>
+</div>
+
+<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+</html>
