@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<style>
-	        #myBtn {
+	<style>
+       #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -21,11 +21,67 @@
 #myBtn:hover {
   background-color: blue;
 }
+
+#img1 {
+  position: absolute;
+  top: 390px;
+  left: 80px;
+}
+
+#img2 {
+    position: absolute;
+  top: 435px;
+  left: 410px;
+}
+
+#img3 {
+  position: absolute;
+  top: 710px;
+  left: 445px;
+}
+
+#img4 {
+  position: absolute;
+  top: 825px;
+  left: 45px;
+}
+
+#img5 {
+  position: absolute;
+  top: 680px;
+  left: 810px;
+}
+
+#img6 {
+  position: absolute;
+  top: 970px;
+  left: 460px;
+}
+
+#img7 {
+  position: absolute;
+  top: 1100px;
+  left: 800px;
+}
+
+#img8 {
+  position: absolute;
+  top: 390px;
+  left: 840px;
+}
+
+#img9 {
+  position: absolute;
+  top: 1100px;
+  left: 65px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 50rem;
+  padding-bottom: 80rem;
   min-height: 100%;
   font-family: "Open Sans";
 }
@@ -37,12 +93,66 @@ h1{
    text-decoration: none;
    margin: 0;
    padding: 20px;
+   color: white;
 }
 h2 {
   color: white;
    font-family:'Abril Fatface' ;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px white;
 }
+
+
+$base-duration: 500ms;
+
+// Breakpoints
+$sm: new-breakpoint(min-width 320px);
+$med: new-breakpoint(min-width 768px);
+$lg: new-breakpoint(min-width 1024px);
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+
+.align-left {
+	float: left;
+	margin-right: 200px;
+}
+
+.align-right {
+	float: right;
+	margin-left: 20px;
+}
+
+.slide-in {
+	opacity: 0;
+	transition: all .5s;
+}
+
+.align-left.slide-in {
+	transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+	transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+	opacity: 1;
+	transform: translateX(0%) scale(1);
+}
+
 nav {
   max-width: 960px;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
@@ -65,7 +175,7 @@ nav ul li a {
   padding: 18px;
   font-family: "Open Sans";
   text-transform:uppercase;
-  color: white;
+  color: #ffde42;
   font-size: 18px;
   text-decoration: none;
   display: block;
@@ -74,12 +184,12 @@ nav ul li a {
 nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.1);
-  color: #041c84;
+  color: #151B8D;
 }
 html {
   height: 100%;
   box-sizing: border-box;
-  background-image: linear-gradient(to right top, #242444 0%, purple 100%);
+  background-image: linear-gradient(to right top, black 0%,  #151B54 100%);
 
 }
 
@@ -94,9 +204,7 @@ html {
   margin-top: 0;
 }
 
-/**
- * Footer Styles
- */
+
 
 .footer {
   position: absolute;
@@ -128,72 +236,82 @@ html {
         h4 {
           flex:1 0 100%;
         }
-        
+
 
 </style>
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-<div class="demo">
-<header>
-<h1> 11:11 | Sky Bar </h1>
-</header>
-
-<nav>
-  <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
-    <li>
-      <a href="about.html">About</a>
-    </li>
-    <li>
-      <a href="menus.html">Menus</a>
-    </li>
-    <li>
-      <a href="gallery.html">Gallery</a>
-    </li>
-  </ul>
-</nav>
-  
-    <h2>Gallery</h2>
-  <p> ccjchjcjhch <p>
-  <div class="footer">
-
-     <div class="restaurant-info">
-  
-    <div class="locations">
-      <h4>LOCATIONS</h4>
-      <div class="location-1">
-        <h5>132 Sesame Street<br />New York City, NY &#8212; 11231</h5>
-      </div><!--location-1-->
-      <div class="location-2">
-        <h5>Evergreen Terrace<br /> Springfield, OR &#8212; 10003</h5>
-      </div>
-    </div><!--locations end-->
-
-    <div class="hours">
-      <h4> HOURS </h4>
-      <div class="weekdays">
-        <h5>Monday - Friday<br/>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<div class="demo">
+			<header>
+				<h1> 11:11 | Sky Bar </h1>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="menus.html">Menus</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</nav>
+			<h2>Gallery</h2>
+			<img id = "img1" src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width= 300 class="align-left slide-in">
+				<img id = "img2" src="https://www.thedrunkpirate.com/wp-content/uploads/savemoney.jpg" width = 400 class="align-right slide-in">
+					<img id = "img3" src="https://img1.10bestmedia.com/Images/Photos/249430/p-Gilt_55_660x440_201404251038.jpg" width = 320 class="align-left slide-in">
+						<img id = "img4" src="https://images.squarespace-cdn.com/content/v1/5ccc970f7046802e565771ae/1561494405888-DX2W32LSA8I0WYDK0MQN/ke17ZwdGBToddI8pDm48kDVEj010BbXsLnm509AHjVF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWiOgHWyWfC8BdxC_WuXfvhWFtDdzCpB3PJsO8_z2e5f_W3y_yy4MVWH39a9Q36QsA/SCB-COVER-BARS.jpg?format=2500w" width = 350 class="align-right slide-in">
+							<img id = "img5" src="https://media.timeout.com/images/105244456/630/472/image.jpg" width= 500 class="align-left slide-in">
+								<img id = "img6" src="https://www.barandbooks.cz/slider/mobile_manesova2.jpg" width = 300 class="align-right slide-in">
+									<img id = "img7" src="https://i1.trekearth.com/photos/1976/downtown75_filtereda.jpg" width = 450 class="align-left slide-in">
+										<img id = "img8" src="https://christianitymalaysia.com/wp/wp-content/uploads/2015/07/Wedding-anniversary-first-dinner-night.jpg" width = 450 class="align-right slide-in">
+											<img id = "img9" src="https://media.istockphoto.com/photos/top-of-wood-table-with-blur-light-orange-lamp-of-bar-or-pub-for-party-picture-id850932218?k=6&m=850932218&s=612x612&w=0&h=z2XThCVbaA9GkxSjVLfxIoCdcxF-PsyIuIFsqP8ocVw=" width = 350 class="align-left slide-in">
+												<div class="footer">
+													<div class="restaurant-info">
+														<div class="locations">
+															<h3>LOCATIONS</h3>
+															<div class="location-1">
+																<h4>132 Sesame Street
+																	<br />New York City, NY &#8212; 11231
+																</h4>
+															</div>
+															<!--location-1-->
+															<div class="location-2">
+																<h4>Evergreen Terrace
+																	<br /> Springfield, OR &#8212; 10003
+																</h4>
+															</div>
+														</div>
+														<!--locations end-->
+														<div class="hours">
+															<h3> HOURS </h3>
+															<div class="weekdays">
+																<h4>Monday - Friday
+																	<br/>
           6:30pm - 11:11pm
-        </h5>
-      </div><!--weekdays end-->
-      
-      <div class="weekends">
-        <h5>Saturday & Sunday<br />
+        
+																</h4>
+															</div>
+															<!--weekdays end-->
+															<div class="weekends">
+																<h4>Saturday & Sunday
+																	<br />
          11:11am - 11:11pm
-        </h5>
-      </div><!--weekends end-->
-      <!--hours end-->
-    
-  </div><!--restaurant-info end-->
-    </div>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <div>
-    </div>
-  <script>
-  	//Get the button
+        
+																</h4>
+															</div>
+															<!--weekends end-->
+															<!--hours end-->
+														</div>
+														<!--restaurant-info end-->
+													</div>
+													<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+													<script>
+    //Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -212,5 +330,46 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-  </script>
-</html>
+
+function debounce(func, wait = 20, immediate = true) {
+	var timeout;
+	return function() {
+		var context = this,
+			args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+}
+
+const sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide(e) {
+	sliderImages.forEach(sliderImage => {
+		// halfway through the image
+		const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+		// bottom of the image
+		const imageBottom = sliderImage.offsetTop + sliderImage.height;
+		const isHalfShown = slideInAt > sliderImage.offsetTop;
+		const isNotScrolledPast = window.scrollY < imageBottom;
+		if (isHalfShown && isNotScrolledPast) {
+			sliderImage.classList.add('active');
+		} else {
+			sliderImage.classList.remove('active');
+		}
+
+		console.log(slideInAt);
+	});
+}
+
+window.addEventListener('scroll', debounce(checkSlide));
+
+
+
+													</script>
+												</html>
