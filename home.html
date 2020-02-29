@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-	#myBtn {
+	<style>
+               #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -22,24 +21,17 @@
 #myBtn:hover {
   background-color: blue;
 }
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 h1{
-
    position: relative;
-
    text-align: center;
-
    font-family:'Abril Fatface' ;
-
    font-size: 60px;
-
    text-decoration: none;
-
    margin: 0;
-
    padding: 20px;
-
+   color: white;
 }
 
 nav {
@@ -64,7 +56,7 @@ nav ul li a {
   padding: 18px;
   font-family: "Open Sans";
   text-transform:uppercase;
-  color: black;
+  color: #ffde42;
   font-size: 18px;
   text-decoration: none;
   display: block;
@@ -73,16 +65,14 @@ nav ul li a {
 nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.1);
-  color: #041c84;
+  color: #151B8D;
 }
-
 html {
   height: 100%;
   box-sizing: border-box;
-  background-image: linear-gradient(to right top, #242444 0%, purple 100%);
+  background-image: linear-gradient(to right top, black 0%,  #151B54 100%);
 
 }
-
 *,
 *:before,
 *:after {
@@ -550,84 +540,83 @@ body {
         h4 {
           flex:1 0 100%;
         }
-</style>
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-	<div class="demo">
-		<header>
-			<h1> 11:11 | Sky Bar </h1>
-		</header>
-		<nav>
-			<ul>
-				<li>
-					<a href="home.html">Home</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="menus.html">Menus</a>
-				</li>
-				<li>
-					<a href="gallery.html">Gallery</a>
-				</li>
-			</ul>
-		</nav>
-		<body>
-			<div class="sign1">
-				<span class="fast-flicker">V</span>I
-				<span class="flicker">P</span>
-			</div>
-			<div class="sign2">
-				<span class="fast-flicker">I</span>nivi
-				<span class="flicker">t</span>atio
-				<span class="flicker">n</span>
-			</div>
-			<div class="multi-bg-example"></div>
-		</body>
-	</div>
-	<div class="footer">
-		<div class="restaurant-info">
-			<div class="locations">
-				<h4 id = "line">LOCATIONS</h4>
-				<div class="location-1">
-					<h5>132 Sesame Street
-						<br />New York City, NY &#8212; 11231
-					</h5>
+    </style>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<div class="demo">
+			<header>
+				<h1> 11:11 | Sky Bar </h1>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Menus</a>
+					</li>
+					<li>
+						<a href="#">Gallery</a>
+					</li>
+				</ul>
+			</nav>
+			<body>
+				<div class="sign1">
+					<span class="fast-flicker">V</span>I
+					<span class="flicker">P</span>
 				</div>
-				<!--location-1-->
-				<div class="location-2">
-					<h5>Evergreen Terrace
-						<br /> Springfield, OR &#8212; 10003
-					</h5>
+				<div class="sign2">
+					<span class="fast-flicker">I</span>nivi
+					<span class="flicker">t</span>atio
+					<span class="flicker">n</span>
 				</div>
-			</div>
-			<!--locations end-->
-			<div class="hours">
-				<h4> HOURS </h4>
-				<div class="weekdays">
-					<h5>Monday - Friday
-						<br/>
+				<div class="multi-bg-example"></div>
+			</body>
+		</div>
+		<div class="footer">
+			<div class="restaurant-info">
+				<div class="locations">
+					<h3>LOCATIONS</h3>
+					<div class="location-1">
+						<h4>132 Sesame Street
+							<br />New York City, NY &#8212; 11231
+						</h4>
+					</div>
+					<!--location-1-->
+					<div class="location-2">
+						<h4>Evergreen Terrace
+							<br /> Springfield, OR &#8212; 10003
+						</h4>
+					</div>
+				</div>
+				<!--locations end-->
+				<div class="hours">
+					<h3> HOURS </h3>
+					<div class="weekdays">
+						<h4>Monday - Friday
+							<br/>
           6:30pm - 11:11pm
         
-					</h5>
-				</div>
-				<!--weekdays end-->
-				<div class="weekends">
-					<h5>Saturday & Sunday
-						<br />
+						</h4>
+					</div>
+					<!--weekdays end-->
+					<div class="weekends">
+						<h4>Saturday & Sunday
+							<br />
          11:11am - 11:11pm
         
-					</h5>
+						</h4>
+					</div>
+					<!--weekends end-->
+					<!--hours end-->
 				</div>
-				<!--weekends end-->
-				<!--hours end-->
+				<!--restaurant-info end-->
 			</div>
-			<!--restaurant-info end-->
-		</div>
-		    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-  <script>
-  	//Get the button
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<script>
+       //Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -646,6 +635,5 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-  </script>
+   </script>
 		</html>
-
